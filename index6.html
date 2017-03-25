@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task6</title>
+    <script>
+        function mathOperation(arg1, arg2, operation) {
+            switch(operation) {
+                    case("+"):
+                        document.write(summary(arg1, arg2));
+                    break;
+                    case("-"):
+                        document.write(subtraction(arg1, arg2));
+                    break;
+                    case("*"):
+                        document.write(multiplication(arg1, arg2));
+                    break;
+                    case("/"):
+                        document.write(division(arg1, arg2));
+                    break;
+                    default:
+                        document.write("Sorry...");
+            }
+        }
+        
+       function summary(a,b) {
+           return (a + b);
+       } 
+    
+       function subtraction(a,b) {
+           return (a - b);
+       }
+       
+       function multiplication(a,b) {
+           return (a * b);
+       }
+        
+       function division(a,b) {
+           return (a / b);
+       } 
+       
+       mathOperation(5, 6, "+");
+       mathOperation(11, 8, "-");
+       mathOperation(5, 15, "*"); 
+       mathOperation(30, 6, "/"); 
+       mathOperation(5, 6, "=");    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
